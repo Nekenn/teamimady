@@ -33,15 +33,6 @@ function HomePage() {
                 imageUrl: "/assets/kisspng-computer-icons-user-profile-clip-art-portable-netw-c-svg-png-icon-free-download-389-86-onlineweb-5c6f7efde29670.9426602115508108779281.png"
             }
         )
-        ,
-        new Member(
-            {
-                id: 4,
-                name: "Rakoto",
-                adress: "Trois chemins",
-                imageUrl: "/assets/valala.png"
-            }
-        )
     ]
 
     const saveMember = (member: Member) =>{

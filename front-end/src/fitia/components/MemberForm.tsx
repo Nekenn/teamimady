@@ -1,12 +1,15 @@
-import React, { SyntheticEvent } from "react";
+import React, { SyntheticEvent, useState } from "react";
 import Member from "./Member";
 
 interface memberFormProps {
+    member: Member;
     onSave: (member: Member) => void;
     onCancel: () => void;
 }
 
-function MemberForm({ onSave, onCancel }: memberFormProps) {
+function MemberForm({ member: initialMember ,onSave, onCancel }: memberFormProps) {
+    const [member, setMember] = useState(initialMember);
+    
     const handleSubmit = (event: SyntheticEvent) => {
         event.preventDefault();
         onSave(new Member({ name: "updateProject" }))

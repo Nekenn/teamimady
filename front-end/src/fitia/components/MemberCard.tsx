@@ -13,7 +13,7 @@ function MemberCard(props: memberCardProps) {
     };
     return (
         <div className="card">
-            <img src={member.imageUrl} alt={member.name} />
+            <img src={member.imageUrl} alt={member.name} width="20%" height="auto" />
             <section className="section dark">
                 <h5 className="strong"><strong>Laharana: {member.id}</strong></h5>
                 <h5 className="strong"><strong>Anarana: {member.name}</strong></h5>
